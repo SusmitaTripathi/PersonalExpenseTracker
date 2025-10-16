@@ -13,8 +13,8 @@ def personal_expense_tracker():
     load_expenses()
     while True:
         user_choice()
-        choice = input("Enter your choice: ")
-        string_choice = "Choice: " + choice
+        choice = input("\nEnter your choice: ")
+        string_choice = "\nChoice: " + choice
         
         if choice == '1':
             print(string_choice + " : Add Expenses")
@@ -36,7 +36,7 @@ def personal_expense_tracker():
             print(string_choice + " : Invallid Choice. Please choose an option from the menu.")
 
 def user_choice():
-    print("Menu:")
+    print("\n\nMenu:")
     print("1. Add Expenses")
     print("2. View Expenses")
     print("3. Track Budget")
